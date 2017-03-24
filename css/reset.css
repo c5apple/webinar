@@ -1,0 +1,35 @@
+@charset "utf-8";
+* html body {
+	font-size: 75%;
+	}
+
+/*div, ol, ul, dl {
+	padding: 0px;
+	width: 800px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	background-repeat: repeat-y;
+	background-image: url(../images/bg_main.jpg);
+	}*/
+p ,h1 ,h2 ,h3 ,h4 ,h5 ,h6, dt, dd, input, textarea {
+	margin: 0px;
+	padding: 0px;
+	font-size: 100%;
+	}
+/*th, td {
+	line-height: normal;
+	font-weight: normal;
+	}*/
+
+em {
+	font-style: normal;
+	font-weight: bold;
+	}
+a {
+	outline-style: none;
+	}
+a img {
+	border: none;
+	}

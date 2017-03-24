@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	padding: 0px;
+	margin: 0px;
+	color: #333;
+	background: #E3E3E3 url(../images/bg-all.png) repeat-y center top;
+	font: 14px/1.8em "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, sans-serif;
+	}
+a:link {
+	color: #06F;
+}
+a:visited {
+	color: #06F;
+}
+a:hover {
+	color: #BE2316;
+	text-decoration: none;
+}
+a:active {
+	color: #BE2316;
+}
+.center {
+	text-align: center;
+	margin-bottom: 50px;
+	height: auto;
+	width: auto;
+
+}
+
+#header {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 100px;
+	text-align: center;
+	padding-top: 20px;
+	background-color: #F2F0F3;
+	border-top-width: 5px;
+	border-bottom-width: 5px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #00367E;
+	border-bottom-color: #00367E;
+}
+#wrapper {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	background: #FFF;
+}
+
+.cleaer {
+	height: 5px;
+	clear: both;
+}
+
+#footer {
+	width: 960px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	bottom: 0px;
+	height: 80px;
+	clear: both;
+	color: #FFF;
+	padding-top: 20px;
+	background-color: #CCC;
+}
+#footer p {
+	margin-top: 30px;
+	font-size: 11px;
+}
+
+a:hover img.over { 
+	opacity:0.65; filter: alpha(opacity=65);
+}
+.font-s {
+	font-size: 11px;
+	line-height: 1.5em;
+}
+.inner {
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	line-height: 1.3em;
+}
+#footer-inner {
+	padding-top: 20px;
+	width: 860px;
+	height: 30px;
+}
+#contents {
+	width: 860px;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+	margin-top: 35px;
+}
+#order-contents {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+	margin-top: 35px;
+}
+#footer a {
+	text-decoration: none;
+	color: #FFF;
+}
+.text {
+	width: 640px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+.date {
+	font-size: 24px;
+	color: #333;
+}
+.webinar-tittle {
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 2em;
+}
