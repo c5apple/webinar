@@ -22,11 +22,11 @@
 <p>&nbsp;</p>
 <div class="form"><script type="text/javascript">
 <!--
-var nannen = 2014;
-var nangatsu = 9;
-var nannichi = 23;
-var nanji = 15;
-var nanpun = 30;
+var nannen = 2017;
+var nangatsu = 3;
+var nannichi = 25;
+var nanji = 20;
+var nanpun =35;
 
 //var myDate = new Date();
 //var dayOfMonth = myDate.getMinutes();
@@ -61,37 +61,20 @@ function div() {
   haba = "width:" + haba + "px;";
  }
  document.write("<div id='timer' style='padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;text-align:center;" + iro + haikei + size + haba + "line-height:1.1;'></div>");
-}
- if(nangatsu == 1){
-  nangatsu = "January";
- }else if(nangatsu == 2){
-  nangatsu = "February";
- }else if(nangatsu == 3){
-  nangatsu = "March";
- }else if(nangatsu == 4){
-  nangatsu = "April";
- }else if(nangatsu == 5){
-  nangatsu = "May";
- }else if(nangatsu == 6){
-  nangatsu = "June";
- }else if(nangatsu == 7){
-  nangatsu = "July";
- }else if(nangatsu == 8){
-  nangatsu = "August";
- }else if(nangatsu == 9){
-  nangatsu = "September";
- }else if(nangatsu == 10){
-  nangatsu = "October";
- }else if(nangatsu == 11){
-  nangatsu = "November";
- }else if(nangatsu == 12){
-  nangatsu = "December";
  }
  limit_data = nangatsu + " " + nannichi + "," + nannen + " " + nanji + ":" + nanpun + ":00";
- limit = new Date(limit_data);
+ limit = new Date();
+ limit.setYear(nannen);
+ limit.setMonth(nangatsu - 1);
+ limit.setDate(nannichi);
+ limit.setHours(nanji);
+ limit.setMinutes(nanpun);
+ limit.setSeconds(0);
+ limit.setMilliseconds(0);
+ limit = limit.getTime();
 
 function timer(){
- today = new Date();
+ today = new Date().getTime();
  days = Math.floor((limit-today)/(24*60*60*1000));
  time1 = Math.floor(((limit-today)%(24*60*60*1000))/(60*60*1000));
  time2 = Math.floor(((limit-today)%(24*60*60*1000))/(60*1000))%60;
@@ -114,7 +97,7 @@ function timer(){
 
  if((limit - today) > 0){
 //  time = word + br + days + "日と" + time1 + "時間" + time2 + "分" + time3 + "秒" + time4;
-//	document.all.timer.innerHTML = time;
+//     document.all.timer.innerHTML = time;
 	setTimeout('timer()',10);
  }else{
   time = '<p><a href="#" target="_blank"><img src="images/btn-order2.jpg" width="522" height="91" class="over" /></a></p>';
