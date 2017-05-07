@@ -1,3 +1,4 @@
+/* webinar-timer.js(v1.0) */
 window.onload = () => {
   /* 時限設定 */
   var year = 2017;
